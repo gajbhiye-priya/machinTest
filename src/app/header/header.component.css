@@ -1,0 +1,44 @@
+
+.first{
+
+    display: flex;
+    justify-content: space-evenly;
+   
+    /* background-color: red; */
+    /* height: 100px; */
+    
+}
+
+.right{
+
+    width: 51%;
+  
+    /* background: red; */
+    
+
+}
+
+.right ul{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    list-style-type: none;
+}
+
+
+
+.button{
+    background-color: white;
+    width:120px;
+    height:40px;
+font-size: 20px;
+margin-top: 70px;
+}
+
+.right ul{
+
+    margin-top: 73px;
+
+}

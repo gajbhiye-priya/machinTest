@@ -1,0 +1,202 @@
+{
+  "registration": [
+    {
+      "firstName": "Priya",
+      "lastName": "Gajbhiye",
+      "email": "priya@123",
+      "contactNumber": "9876545",
+      "age": "45",
+      "state": "Maharashtra",
+      "country": " India",
+      "address": "Sambhaji chowk",
+      "tags": "cricket",
+      "id": 1
+    },
+    {
+      "firstName": "kiran",
+      "lastName": "Gajbhiye",
+      "email": "kirang@gmail",
+      "contactNumber": "",
+      "age": 22,
+      "state": "Gujarat",
+      "country": "Pakistan",
+      "address": "Home",
+      "tags": "assd",
+      "id": 2
+    },
+    {
+      "firstName": "Harshada",
+      "lastName": "Ramteke",
+      "email": "harshu",
+      "contactNumber": 245554,
+      "age": 20,
+      "state": "Goa",
+      "country": "Afghanistan",
+      "address": "Company",
+      "tags": "sdsd",
+      "id": 3
+    },
+    {
+      "firstName": "Sandeep",
+      "lastName": "Bagde",
+      "email": "sandy",
+      "contactNumber": 9876,
+      "age": 29,
+      "state": "Asam",
+      "country": "Albania",
+      "address": "Company",
+      "tags": "wads",
+      "id": 5
+    },
+    {
+      "firstName": "Prathmesh",
+      "lastName": "Gajbhiye",
+      "email": "Pratham @gmail",
+      "contactNumber": 9876544,
+      "age": 21,
+      "state": "Gujarat",
+      "country": "Pakistan",
+      "address": "",
+      "tags": null,
+      "id": 16
+    },
+    {
+      "firstName": "Kiran",
+      "lastName": "Gajbhiye",
+      "email": "kiran@gmail",
+      "contactNumber": 98765,
+      "age": 30,
+      "state": "Gujarat",
+      "country": "Afghanistan",
+      "address": "Home",
+      "tags": null,
+      "id": 17
+    },
+    {
+      "firstName": "Sandeep",
+      "lastName": "Bagde",
+      "email": "bagde",
+      "contactNumber": 988765,
+      "age": 32,
+      "state": "Goa",
+      "country": "Brunei",
+      "address": "Company",
+      "tags": "cricket",
+      "id": 18
+    },
+    {
+      "firstName": "Kiran",
+      "lastName": "",
+      "email": "",
+      "contactNumber": "",
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 19
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "contactNumber": "",
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 20
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "contactNumber": "",
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 21
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "contactNumber": "",
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 22
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "contactNumber": "",
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 23
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "",
+      "contactNumber": "",
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "firstName": "dsjfwsf",
+      "lastName": "agdg",
+      "email": "sdfsd",
+      "contactNumber": 8567,
+      "age": 19,
+      "state": "",
+      "country": "Bangladesh",
+      "address": "",
+      "tags": "",
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "firstName": "Priya",
+      "lastName": "Gajbhiye",
+      "email": "dxfx",
+      "contactNumber": 86,
+      "age": 0,
+      "state": "",
+      "country": "",
+      "address": "",
+      "tags": "",
+      "id": 28
+    },
+    {
+      "firstName": "rupali",
+      "lastName": "meshram",
+      "email": "rupali",
+      "contactNumber": 99999999999,
+      "age": 18,
+      "state": "Gujarat",
+      "country": "Afghanistan",
+      "address": "",
+      "tags": "",
+      "id": 29
+    }
+  ]
+}

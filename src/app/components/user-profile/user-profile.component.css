@@ -1,0 +1,172 @@
+.container {
+
+    width: 100%;
+    height: 1200px;
+    /* background-color: red;  */
+
+}
+
+
+
+.border {
+    height: 100px;
+    background-color: #3aa5dc;
+
+}
+
+
+.first {
+
+    display: flex;
+    justify-content: space-evenly;
+
+
+    /* background-color: red; */
+    /* height: 100px; */
+
+}
+
+.right {
+
+    width: 51%;
+
+    /* background: red;  */
+
+
+}
+
+.right ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    list-style-type: none;
+}
+
+
+
+.button {
+    background-color: #03a9f4;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 40px;
+    border: none;
+}
+
+
+.right ul {
+
+    margin-top: 48px;
+
+}
+
+.avatar{
+    width: 210px;
+    height:225px;
+    margin-top: 55px;
+
+
+}
+
+.profile-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+.profile{
+
+    color: #24acfd;
+    margin-top: 40px;
+    font-size: 19px;
+}
+
+.photo-button{
+    margin-top: 8px;
+    background-color: #f5c534;
+    color: rgb(56, 55, 55);
+    box-shadow: 0px 3px rgb(238, 60, 60);
+  border: none;
+  height: 35px;
+  width:90px;
+  position: relative;
+  right: 162px;
+}
+ 
+.edit-button{
+    margin-top: 8px;
+    background-color: #f5c534;
+    color: rgb(56, 55, 55);
+    box-shadow: 0px 3px rgb(238, 60, 60);
+  position: relative;
+  left: 120px;
+  bottom: 40px;
+ 
+}
+
+.input-file{
+
+    border: none;
+    background-color: white;
+}
+.profile-content{
+
+    display: flex;
+    flex-direction: row;    
+}
+
+.agree{
+    width: 100px;
+    height: 40px;
+ border: none;
+ background-color:rgb(73 169 66);
+ color: white;
+}
+
+.user-details{
+
+    margin-top: 40px;
+    margin-left: 90px;
+}
+
+.matter{
+    font-family:system-ui;
+    font-size: 18px;
+}
+
+.blank{
+
+    height:500px;
+}
+
+.subscribe{
+
+    width: 100%;
+    height: 400px;
+    background-color: #131c25;
+ text-align: center; 
+    font-family: sans-serif;
+   
+   
+
+}
+.job{
+    color: white;
+ position: relative;
+   top:120px;
+}
+
+.find-mores{
+
+    margin-top: 130px;
+    width: 20%;
+    height: 40px;
+    border-style: solid;
+    border-color:#6ed3fd;
+    color: white;
+ border-radius: 4px;
+    background-color: #131c25;
+    text-align: left;
+   font-style: italic;
+}
