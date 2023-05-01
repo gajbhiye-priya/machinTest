@@ -1,25 +1,17 @@
-
-.first{
-
+.first {
     display: flex;
     justify-content: space-evenly;
-   
-    /* background-color: red; */
-    /* height: 100px; */
-    
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
 }
 
-.right{
-
+.right {
     width: 51%;
-  
-    /* background: red; */
-    
-
 }
 
-.right ul{
-
+.right ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -29,16 +21,14 @@
 
 
 
-.button{
+.button {
     background-color: white;
-    width:120px;
-    height:40px;
-font-size: 20px;
-margin-top: 70px;
+    width: 120px;
+    height: 40px;
+    font-size: 20px;
+    margin-top: 70px;
 }
 
-.right ul{
-
+.right ul {
     margin-top: 73px;
-
 }

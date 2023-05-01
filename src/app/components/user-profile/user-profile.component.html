@@ -22,38 +22,36 @@
 
 
   <div class="profile-form">
-
     <label class="profile"> Profile</label>
-
     <div class="profile-content">
-
       <span>
-
         <img class="avatar" src="../../../assets/image/girl.jpg" alt=""><br>
-
         <div style="display:flex; flex-direction: row;">
           <input class="input-file " disabled value="{{fileName}}">
           <button class="photo-button" (click)="fileInput.click()">Edit Photo </button>
           <input #fileInput type="file" (change)="onChange($event)" style="display:none" />
         </div>
         <div>
-          <button class="edit-button" mat-raised-button color="warn" (click)="editProfile()"> Edit Profile</button>
+          <button *ngIf="!isupdate" class="edit-button" mat-raised-button color="warn"
+            (click)="editProfileUser(getData.id)"> Edit Profile</button>
+          <button *ngIf="isupdate" class="edit-button" mat-raised-button color="warn" (click)="addUserProfile()"> Add
+            Profile</button>
         </div>
       </span>
 
-      <div *ngIf="getData">    
-          <span class="matter">
-            <p>
-              I am {{getData.firstName}} {{getData.lastName}} and <br>  Iam above {{getData.age}} old and
-              You can send your email to  <br> {{getData.email}}. I live in the state of <br> 
-              {{getData.state}}. I like to play {{getData.tags}} <br>
-              And please send me newsletter. <br> please reach out to me on my {{getData.contactNumber}}
-            </p>
-          </span>
-          <button class="agree"> I Agree</button>
+      <div *ngIf="getData">
+        <span class="matter">
+          <p>
+            I am {{getData.firstName}} {{getData.lastName}} and <br> Iam above {{getData.age}} old and
+            You can send your email to <br> {{getData.email}}. I live in the state of <br>
+            {{getData.state}}. I like to play {{getData.tags}} <br>
+            And please send me newsletter. <br> please reach out to me on my {{getData.contactNumber}}
+          </p>
+        </span>
+        <button class="agree"> I Agree</button>
 
-        </div>
- 
+      </div>
+
 
 
     </div>
@@ -63,7 +61,6 @@
 
 
   </div>
-
 
   <div class="subscribe">
     <p class="job"> Subscribe to our job Seeker Mailing List </p>

@@ -1,104 +1,108 @@
-.container{
-
-    width: 100%;
-    height:1400px;
-
+.container {
+  width: 100%;
+  height: 1400px;
 }
 
 
 
-.border{
-    width: 100%;
-    height: 100px;
-    background-color:  #3aa5dc;
-
+.border {
+  width: 100%;
+  height: 100px;
+  background-color: #3aa5dc;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
-.border label{
-
-    color: white;
-    text-align: center;
-    margin-left: 50px;
-    position: absolute;
-    top:30px;
-    font-size: 20px;
+.border label {
+  color: white;
+  text-align: center;
+  margin-left: 50px;
+  position: absolute;
+  top: 30px;
+  font-size: 20px;
 }
 
-.email-field{
-
-    width:500px;
+.email-field {
+  width: 500px;
 }
 
-.avatar{
-    width: 80%;
-    height:160px;
+.avatar {
+  width: 80%;
+  height: 160px;
 }
 
-.profile-form{
-    display: flex;
-    justify-content: space-evenly;
-
+.profile-form {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 mat-slider {
-    width: 300px;
-  }
-
-  .example-additional-selection {
-    opacity: 0.75;
-    font-size: 0.75em;
-  }
-
-
-  .mat-raised-button.mat-primary {
-    margin-left: 120px;
-    color: #fff;
-  }
-
-  .button{
-    margin-left: 60px;
-  }
-
-  .first-field{
-display: flex;
-justify-content: space-between;
-    
-  }
-
-  .forms{
-    width:100%;
-    
-  }
- 
-  .mat-form-field-appearance-outline .mat-form-field-flex {
-    padding: 0 0.75em 0 0.75em;
-    margin-top: -0.25em;
-    position: relative;
-   
+  width: 300px;
 }
 
-.buttonss{
+.example-additional-selection {
+  opacity: 0.75;
+  font-size: 0.75em;
+}
+
+
+.mat-raised-button.mat-primary {
+  margin-left: 120px;
+  color: #fff;
+}
+
+.button {
+  margin-left: 60px;
+}
+
+.first-field {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.forms {
+  width: 100%;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-flex {
+  padding: 0 0.75em 0 0.75em;
+  margin-top: -0.25em;
+  position: relative;
+
+}
+
+.buttonss {
   margin-top: 40px;
   margin-left: 60px;
 }
 
-.hobbis{
+.hobbis {
   background-color: #8996a0;
   width: 78px;
- color: white;
+  color: white;
   padding: 5px;
-margin-right: 8px;
+  margin-right: 8px;
 }
-mat-icon{
 
-  width:10px;
+mat-icon {
+  width: 10px;
   color: #d9bf49;
   font-size: 17px;
   font-weight: 600;
 }
 
-.tagss{
-
+.tagss {
   display: flex;
-  /* padding-right: 10px; */
+}
+
+mat-form-field {
+  height: 100px;
+}
+
+.validat {
+  position: absolute;
+  top: 210px;
+  color: red;
 }

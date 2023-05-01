@@ -10,11 +10,14 @@ import { UserRegistrationComponent } from '../user-registration/user-registratio
   styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-  profileId: any
-  fileName: string = "";
-   getData:any
 
-  data:any=[]
+  isupdate: boolean = false
+  profileId: any
+  usersId: any
+  fileName: string = "";
+  getData: any
+
+  data: any = []
 
 
   firstName: string;
@@ -27,50 +30,47 @@ export class UserProfileComponent implements OnInit {
   address: string;
   tags: string;
 
-  constructor(public router: Router, private userdataService: UserRegistrationService, private actRoute: ActivatedRoute, public dialog: MatDialog){}
+  constructor(public router: Router, private userdataService: UserRegistrationService, private actRoute: ActivatedRoute, public dialog: MatDialog) { }
 
   ngOnInit() {
-   this.profileId= this.actRoute.snapshot.paramMap.get("id");
-   console.log("ProfileId",this.profileId )
-    this.userdataService.getProfileById(this.profileId).subscribe((result)=>{
-      console.log("get all list",result)
-      this.getData=result
-    
+    this.profileId = this.actRoute.snapshot.paramMap.get("id");
+    console.log("ProfileId", this.profileId)
+    this.userdataService.getProfileById(this.profileId).subscribe((result) => {
+      console.log("get all list", result)
+      this.getData = result
     })
   }
-
-
 
   onChange(event) {
     this.fileName = event.target.files[0].name;
   }
 
-  editProfile(){
+  editProfileUser(code: any) {
+    this.isupdate = true
+    console.log(code)
+    this.editProfile(code)
+  }
 
+  addUserProfile() {
+    this.editProfile(0)
+  }
+
+  editProfile(userId: any) {
+    console.log("userId", userId)
     const dialogRef = this.dialog.open(UserRegistrationComponent, {
-      data: {firstName: this.firstName, lastName: this.lastName, email:this.email,
-             contactNumber:this.contactNumber,  age:this.age,  state:this.state,
-             country:this.country, address:this.address, tags :this.tags
+      data: {
+        userId: userId
       },
-      width:'55%', height:'650px'
- 
-    });
+
+      width: '55%', height: '650px',
+    })
+
+
 
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
-      this.firstName = result;
-      this.lastName = result;
-      this.email = result;
-      this.contactNumber = result;
-      this.age = result;
-      this.state = result;
-      this.country = result;
-      this.address = result;
-      this.tags = result;
     });
 
   }
 
-
-  
 }

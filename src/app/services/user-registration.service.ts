@@ -6,26 +6,23 @@ import { Injectable } from '@angular/core';
 })
 export class UserRegistrationService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  addProfile(payload:any){
+  addProfile(payload: any) {
 
     return this.http.post('http://localhost:3000/registration', payload)
 
   }
 
-  
-
-  // getProfileById(id:any){
-  //   console.log("service is working fine", )
-  //   return this.http.get(`http://localhost:3000/registration/${id}`)
-  
-  // }
-
-  getProfileById(id:any){
-     return this.http.get(`http://localhost:3000/registration/${id}`)
-   
+  getProfileById(id: number) {
+    console.log("serviceId", id)
+    return this.http.get(`http://localhost:3000/registration/${id}`)
   }
-  
+
+  userDataupdate(datas: any, id: number) {
+    return this.http.put(`http://localhost:3000/registration/${id}`, datas)
+  }
+
+
 
 }

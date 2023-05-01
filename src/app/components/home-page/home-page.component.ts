@@ -6,7 +6,7 @@ import { UserRegistrationComponent } from '../user-registration/user-registratio
 
 
 
-  
+
 
 
 @Component({
@@ -25,22 +25,20 @@ export class HomePageComponent implements OnInit {
   country: string;
   address: string;
   tags: string;
- 
 
-  constructor(public dialog: MatDialog){}
+
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
-
-  openDialog(){
-
+  openDialog() {
     const dialogRef = this.dialog.open(UserRegistrationComponent, {
-      data: {firstName: this.firstName, lastName: this.lastName, email:this.email,
-             contactNumber:this.contactNumber,  age:this.age,  state:this.state,
-             country:this.country, address:this.address, tags :this.tags
+      data: {
+        firstName: this.firstName, lastName: this.lastName, email: this.email,
+        contactNumber: this.contactNumber, age: this.age, state: this.state,
+        country: this.country, address: this.address, tags: this.tags
       },
-      width:'55%', height:'650px'
- 
+      width: '55%', height: '650px'
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -56,14 +54,7 @@ export class HomePageComponent implements OnInit {
       this.tags = result;
     });
 
-}
-
-// openDialog1(enterAnimationDuration: string, exitAnimationDuration: string): void {
-//   this.dialog.open(ChildComponent, {
-//     width: '250px',
-//     enterAnimationDuration,
-//     exitAnimationDuration,
-//   });
+  }
 
 }
 

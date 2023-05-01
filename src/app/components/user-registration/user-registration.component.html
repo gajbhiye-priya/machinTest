@@ -17,15 +17,21 @@
       <div class="first-field">
         <span>
           <mat-form-field appearance="outline">
-            <input formControlName="firstName" matInput type="text"   placeholder="First Name" required>
-
+            <input formControlName="firstName" matInput type="text" placeholder="First Name" required>
           </mat-form-field> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <span class="validat"
+            *ngIf="createForm.controls['firstName'].invalid && (createForm.controls['firstName'].dirty ||createForm.controls['firstName'].touched)">
+            firstName is required</span>
         </span>
 
         <span>
           <mat-form-field appearance="outline">
-            <input formControlName="lastName" matInput type="text" placeholder="Last Name" >
+            <input formControlName="lastName" matInput type="text" placeholder="Last Name">
           </mat-form-field>
+          <span class="validat"
+            *ngIf="createForm.controls['lastName'].invalid && (createForm.controls['lastName'].dirty|| createForm.controls['lastName'].touched)">
+            lastname is required </span>
+
         </span>
       </div>
 
@@ -33,12 +39,18 @@
         <mat-form-field class="forms" appearance="outline">
           <input formControlName="email" matInput type="text" placeholder="Email">
         </mat-form-field>
+         <span class="validat"
+          *ngIf="createForm.controls['email'].invalid && (createForm.controls['email'].dirty|| createForm.controls['email'].touched)">
+          email is required </span>
       </div>
 
       <div>
         <mat-form-field class="forms" appearance="outline">
           <input formControlName="contactNumber" matInput type="number" placeholder="(541) 754-3010">
         </mat-form-field>
+        <span class="validat"
+        *ngIf="createForm.controls['contactNumber'].invalid && (createForm.controls['contactNumber'].dirty|| createForm.controls['contactNumber'].touched)">
+        email is required </span>
       </div>
 
       <div>
@@ -83,53 +95,56 @@
 
         </mat-form-field>
 
-         
-        <div *ngIf="createForm.controls['address'].value === 'Home'" >
-            <mat-form-field class="forms" appearance="outline">
-              <input formControlName="AaddressOne" matInput type="text" placeholder="AaddressOne">
-              
-            </mat-form-field> 
-    
-            <mat-form-field class="forms" appearance="outline">
-              <input formControlName="addresstwo" matInput type="text" placeholder="addresstwo">
-            </mat-form-field> 
+
+        <div *ngIf="createForm.controls['address'].value === 'Home'">
+          <mat-form-field class="forms" appearance="outline">
+            <input formControlName="AaddressOne" matInput type="text" placeholder="AaddressOne">
+
+          </mat-form-field>
+
+          <mat-form-field class="forms" appearance="outline">
+            <input formControlName="addresstwo" matInput type="text" placeholder="addresstwo">
+          </mat-form-field>
         </div>
 
-        
-        <div  *ngIf="createForm.controls['address'].value === 'Company'">
-            <mat-form-field class="forms" appearance="outline">
-              <input formControlName="AaddressOne" matInput type="text" placeholder="companyaddress1">
-            </mat-form-field> 
-        
-            <mat-form-field class="forms" appearance="outline">
-              <input formControlName="addresstwo" matInput type="text" placeholder="companyaddress2">
-            </mat-form-field>
-          
+
+        <div *ngIf="createForm.controls['address'].value === 'Company'">
+          <mat-form-field class="forms" appearance="outline">
+            <input formControlName="AaddressOne" matInput type="text" placeholder="companyaddress1">
+          </mat-form-field>
+
+          <mat-form-field class="forms" appearance="outline">
+            <input formControlName="addresstwo" matInput type="text" placeholder="companyaddress2">
+          </mat-form-field>
+
         </div>
 
       </div>
 
 
-      <div> 
-        <!-- <span *ngFor="let hobby of hobbies">{{hobby.tags}} </span> -->
+      <div>
         <mat-form-field class="forms" appearance="outline">
-          <input  #box (keyup.enter)="onEnter(box.value)"  formControlName="tags" matInput type="text" placeholder="tags">
+          <input #box (keyup.enter)="onEnter(box.value)" formControlName="tags" matInput type="text" placeholder="tags">
         </mat-form-field>
-        <div class="tagss"> 
-        <p class=" hobbis" *ngFor="let hobby of hobbies; index as i">{{hobby}} <mat-icon (click)="removeHobby(i)" matSuffix>close</mat-icon></p>
-         </div>
+        <div class="tagss">
+          <p class=" hobbis" *ngFor="let hobby of hobbies; index as i">{{hobby}} <mat-icon (click)="removeHobby(i)"
+              matSuffix>close</mat-icon></p>
+        </div>
       </div>
 
       <div>
-        <input  type="checkbox"> &nbsp;
+        <input type="checkbox"> &nbsp;
         <label>Subscribe to newsletter </label>
       </div>
 
       <div class="buttonss">
         <button class="button" mat-raised-button color="success" (click)="Cancel()"> Cancel</button>
-        <button class="submit-button"    mat-raised-button color="primary" (click)="submit()"> Submit</button>
+        <button *ngIf="!isUserUpdate" class="submit-button" mat-raised-button color="primary" (click)="submit()"
+          [disabled]="!createForm.valid"> Submit</button>
+        <button *ngIf="isUserUpdate" class="submit-button" mat-raised-button color="primary" (click)="update()"
+          [disabled]="!createForm.valid"> Update</button>
       </div>
     </form>
-  
+
   </div>
 </div>
